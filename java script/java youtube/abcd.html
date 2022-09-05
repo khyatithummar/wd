@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>result</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var math=parseInt(prompt("enter the value"));
+	var eng=parseInt(prompt("enter the value"));
+	var guj=parseInt(prompt("enter the value"));
+	var sc=parseInt(prompt("enter the value"));
+	var ss=parseInt(prompt("enter the value"));
+	var drwing=parseInt(prompt("enter the value"));
+	var sp=parseInt(prompt("enter the value"));
+	var total=math+eng+guj+sc+ss+drwing+sp;
+	var per=total*100/700;
+
+	if(per>=40 && per<=59)
+	{
+		document.write(total + "secound class");
+	}
+	else if(per>=50 && per<=69)
+	{
+		document.write(total +"PASS");
+	}
+	else if(per>=60 && per<=69)
+	{
+		document.write( total +"first class");
+	}
+	else if(per>=70 && per<=89)
+	{
+		document.write( total +"distinction");
+	}
+	else if(per>=90 && per<=99)
+	{
+		document.write(total +"brilient");
+	}
+	else
+	{
+		document.write(total +"please enter the true value  ");
+	}
+
+</script>
+</html>
