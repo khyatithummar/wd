@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+	<style type="text/css">
+		button
+		{
+			color: black;
+			background-color: lightgray;
+			height: 50px;
+			width: 200px;
+			transition: 2s;
+		}
+		button:after
+		{
+			content: "";
+			color: white;
+			background-color: black;
+			z-index: -1;
+		}
+		button:hover
+		{
+			background-color: yellow;
+			color: black;
+		}
+		button after:hover
+		{
+
+		}
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+    <button>click here</button>
+</body>
+</html>
