@@ -1,0 +1,22 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+p
+{
+	background-image: linear-gradient(red,blue,pink,grey);
+	/*border: 1px solid black;*/
+}
+div
+{
+	background-image: linear-gradient( to right,blue,orange,grey,pink);
+}
+header
+{
+	background-image: repeating-linear-gradient(to right,pink 5%,skyblue 10%,grey 10%);
+}
+section
+{
+	background-image: radial-gradient(red,black,blue,white);
+}

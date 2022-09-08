@@ -1,0 +1,37 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+.main
+{
+	border: 1px solid black;
+	height: 200px;
+	width: 100%;
+	background-color: pink;
+}
+.d1
+{
+	border: 1px solid black;
+	height: 300px;
+	width: 33%;
+	background-color: red;
+	float: left;
+}
+.d2
+{
+	border: 1px solid black;
+	height: 300px;
+	width: 33%;
+	/*background-color: red;*/
+	overflow: scroll;
+	float: left;
+}
+.d3
+{
+	border: 1px solid black;
+	height: 300px;
+	width: 33%;
+	background-color: grey;
+	float: left;
+}
