@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>dropdown</title>
+	<style type="text/css">
+		.dropdown
+		{
+			height: 200px;
+			width: 200px;
+			/*border: 1px solid black;*/
+		}
+		.btn
+		{
+			height: 50px;
+			width: 100%;
+			/*border: 1px solid black;*/
+			background: coral;
+			font-size: 40px;
+		}
+		.content
+		{
+			height: 150px;
+			width: 100%;
+			/*border: 1px solid black;*/
+			background: skyblue;
+			display: none;
+		}
+		.content a
+		{
+           font-size: 30px;
+           display: block;
+           text-decoration: none;
+           padding: 8px;
+       }
+       .dropdown:hover .content
+       {
+       	 display: block;
+       }
+
+	</style>
+</head>
+<body>
+   <div class="dropdown">
+   	<button class="btn">service</button>
+   	<div class="content">
+   		<a href="">online services</a>
+        <a href="">offline services</a>
+   	</div>
+   </div>
+</body>
+</html>

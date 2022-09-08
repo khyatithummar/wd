@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drop menu</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		header
+		{
+			height: 800px;
+			width: 100%;
+			border: 1px solid black;
+			background-image: url('w2.jpg');
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			display: flex;
+		}
+		.d1
+		{
+			height: 100px;
+			width: 100px;
+			border-radius: 25%;
+		}
+		.w1
+		{
+			height: 100px;
+			width: 100px;
+			border-radius: 25%;
+		}
+
+		#abc
+		{
+			display: flex;
+			position: absolute;
+			left:650px;
+
+		}
+		#abc a
+		{
+			/*height: 150px;*/
+			width: 150px;
+			text-decoration: none;
+			display:block;
+			/*font-size: 19px;*/
+			color: black;
+			padding-top: 17px;
+			padding-left: 15px;
+			background-color: skyblue;
+			font-size: 30px;
+			border: 1px solid black;
+			/*text-align: center;*/
+
+
+		}
+		.main
+		{
+			height:80px;
+			width: 150px;
+			/*position: absolute;*/
+			/*left: 400px;*/
+			/*display: flex;*/
+
+		}
+		.btn
+		{
+			height: 100%;
+			width: 100%;
+			background-color: skyblue;
+			font-size: 30px;
+		}
+		.content
+		{
+			height: 150px;
+			width:150px;
+			background-color: blue;
+			display:none;
+			/*display: flex;*/
+			/*margin-left: 200px;*/
+
+		}
+		.content a
+		{
+			/*height: 150px;*/
+			/*width: 180px;*/
+			text-decoration: none;
+			display:block;
+			font-size: 20px;
+			color: white;
+			padding: 5px;
+
+		}
+		.main:hover .content
+		{
+			display: block;
+		}
+		.main1
+		{
+			height: 80px;
+			width: 180px;
+			background-color: skyblue;
+
+			
+		}
+		.content1
+		{
+			height: 150px;
+			width:150px;
+			background-color: blue;
+			display:none;
+		}
+		.content1 a
+		{
+			text-decoration: none;
+			display:block;
+			font-size: 20px;
+			color: white;
+			padding: 5px;
+		}
+		.main1:hover .content1
+		{
+			display: block;
+		}
+		.main2
+		{
+			height: 80px;
+			width: 180px;
+			background-color: skyblue;
+			
+		}
+		.content2
+		{
+			height: 150px;
+			width:150px;
+			background-color: blue;
+			display:none;
+		}
+		.content2 a
+		{
+			text-decoration: none;
+			display:block;
+			font-size: 20px;
+			color: white;
+			padding: 5px;
+		}
+		.main2:hover .content2
+		{
+			display: block;
+		}
+		.b1
+		{
+			background-color: skyblue;
+			height: 80px;
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="d1">
+			<img src="w1.jpg" class="w1">
+		</div>
+
+		
+	<footer id="abc">
+		<a href="">home</a>
+	<div class="main">
+		<button class="btn">tutorals</button>
+		<div class="content">
+			<a href="">python</a>
+			<a href="">javascript</a>
+			<a href="">j qury</a>
+		</div>
+	</div>
+		<div class="main1">
+		<button class="btn">wed design</button>
+		<div class="content1">
+			<a href="">front end</a>
+			<a href="">Back end</a>
+			<a href="">other</a>
+		</div>
+	</div>
+	<div class="main2">
+		<button class="btn">srvice</button>
+		<div class="content2">
+			<a href="">online srvice</a>
+			<a href="">offline srvice</a>
+		</div>
+	</div>
+	</footer>
+
+</header>
+</body>
+</html>

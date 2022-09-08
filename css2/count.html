@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>counter</title>
+	<style type="text/css">
+	body
+	{
+		counter-reset: part;
+	}
+	h1::before
+	{
+		counter-increment: part;
+		content: "part " counter(part )":-" 
+
+	}
+	</style>
+</head>
+<body>
+	<h1>this web page</h1>
+	<h1>this web page</h1>
+	<h1>this web page</h1>
+	<h1>this web page</h1>
+	<h1>this web page</h1>
+
+</body>
+</html>
