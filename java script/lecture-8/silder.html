@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slider</title>
+	<style type="text/css">
+		div
+		{
+			height: 500px;
+			width: 500px;
+			border: 1px solid black;
+		}
+		.i1
+		{
+			height: 500px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+	<img src="img1.jfif"  class="i1">
+	<img src="img2.jfif"  class="i1">
+	<img src="img3.jpg"  class="i1">
+	<img src="img4.jpg"  class="i1">
+	<img src="img5.jpg"  class="i1">
+	<img src="img6.jpg"  class="i1">
+	<img src="img7.jpg"  class="i1">
+	<img src="img8.jpg"  class="i1">
+	<img src="img9.jpg"  class="i1">
+	<img src="img10.jpg"  class="i1">
+	<img src="img11.jpg"  class="i1">
+	<img src="img12.jpg"  class="i1">
+	<img src="img13.jpg"  class="i1">
+</div>
+</body>
+<script type="text/javascript">
+	counter=0;
+	var ar=document.getElementsByClassName('i1')
+	function abc()
+	{
+		for(i=0; i<ar.length; i++)
+		{
+			ar[i].style.display="none";
+		}
+		if (counter == ar.length)
+		{
+		 	counter=0;
+		}
+		ar[counter].style.display="block";
+		counter++;
+		setTimeout(abc , 1000)
+	}
+	abc();
+
+		
+</script>
+</html>
