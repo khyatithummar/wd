@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>mouseenter</title>
+	<style type="text/css">
+		div
+		{
+			height: 200px;
+			width: 200px;
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+	<!-- <button></button> -->
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('div').mouseenter(function(){
+					$('div').css("background","yellow")
+			});
+	});
+</script>
+</html>
