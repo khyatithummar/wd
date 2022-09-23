@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>fadeinfadeout-toggle</title>
+	<style type="text/css">
+		div
+		{
+			height: 100px;
+			width: 100px;
+			border: 1px solid black;
+			display: none;
+		}
+		.a1
+		{
+			background-color: orange;
+		}
+		.a2
+		{
+			background-color: whitesmoke;
+		}
+		.a3
+		{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+<div class="a1"></div>
+<div class="a2"></div>
+<div class="a3"></div><br>
+<button>clickhere</button>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function(){
+			$('.a1,.a2,.a3').toggle(2000);
+		});
+	});
+
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>mouseleve</title>
+	<style type="text/css">
+		div
+		{
+			height: 200px;
+			width: 200px;
+			border:1px solid black;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+		<div></div>
+</body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+					$('div').mouseleave(function(){
+							$('div').css("background-color","pink")
+					});
+			});
+		</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form>
+		<label>password</label>
+		<input type="password" placeholder="enter your password" id="i1"><br><br>
+		<input type="submit" name="" value="submit" onclick="text_str()">
+	</form>
+
+</body>
+	<script type="text/javascript">
+		function text_str()
+		{
+			var str=document.getElementById('i1').value;
+			if (str.length==10) 
+			{
+				alert("this is valid number")
+			}
+			else
+			{
+				alert("enter the strong password")
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>special symbol</title>
+</head>
+<body>
+	password:
+	<input type="password" placeholder="enter password"  id="t1"/>
+	<input type="submit" name="" onclick="test_str()"/>
+
+</body>
+<script type="text/javascript">
+	function test_str()
+	{
+		// var res;s
+		var str =document.getElementById('t1').value;
+		if(str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[^a-zA-Z\d]/g)&& str.length >=8)
+		{
+			// res="TRUE";
+			alert("valid")
+		}
+		else
+		{
+			// res="FALSE";
+
+			alert("invalid")
+		}
+
+		// document.getElementById("t2").value = res;
+	}
+</script>
+</html>

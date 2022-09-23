@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>selectfrom</title>
+</head>
+<body>
+	<form >
+	<select id="a2"> 
+		<option>weddesign</option>
+		<option>html</option>
+		<option>css</option>
+		<option>javascript</option>
+		<option>j-query</option>
+	</select>
+	<br><br>
+	<input type="submit" name="" value="submit">
+
+</form>
+</body>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('#a2').focus(function(){
+					$('#a2').css("backgroundColor","pink")
+			});
+
+
+		});
+</script>
+
+</html>
