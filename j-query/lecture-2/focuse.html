@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<title>focuce</title>
+</head>
+<body>
+<form>
+	<input type="text" name="" placeholder="enter your name" class="a1"><br><br>
+	<input type="submit" name="" value="submit" class="a2">
+</form>
+</body>
+<script type="text/javascript">
+	$(document).ready(function (){
+		$(".a1").focus(function(){
+			$(".a1").css("backgroundColor","pink")
+		});
+	});
+</script>
+</html>
