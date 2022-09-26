@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>toggle</title>
+	<style type="text/css">
+		.slider
+		{
+			height: 100px;
+			width: 100%;
+			background: blue;
+			text-align: center;
+		}
+		button
+		{
+			height: 50px;
+			width: 100px;
+		}
+		.slide
+		{
+			height: 100px;
+			width: 100%;
+			background: orange;
+		}
+	</style>
+</head>
+<body>
+<div class="slider">
+	<button>slideup&down</button>
+	<div class="slide"></div>
+	
+</div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('button').click(function()
+			{
+					$('.slide').toggle(2000)
+			});
+	});
+</script>
+</html>
