@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<title>clone</title>
+<style type="text/css">
+	.d1
+	{
+		height: 300px;
+		width: 200px;
+		border: 1px solid black;
+	}
+	.d2
+	{
+		height: 300px;
+		width: 200px;
+		border: 1px solid black;
+	}
+</style>
+</head>
+<body>
+<div class="d1">
+	<h1>this is webpage</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+</div><br>
+<div class="d2">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+</div>
+<button>click here</button>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			// $("h1").clone().prependTo(".d2")
+							$("h1").clone().appendTo(".d2")	
+		});
+	});
+</script>
+</html>
