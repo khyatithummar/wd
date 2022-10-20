@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>jumbbutton</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-around">
+			<div class="col-3 border border-dark mt-5">
+				<h1 class="text-center">login from</h1>
+		<div class="from-group mt-5">
+			<input type="text" name="" placeholder="eanter your username" class="from-control" id="in">
+		</div>
+		<div class="from-groupn mt-5">
+			<input type="password" name="" placeholder="enter your password" class="from-control" id="pw">
+		</div>
+		<div class="from-group mt-5 text-center">
+			<button class="btn border border-dark mb-3" type="button" onclick="abc()">submit</button>
+		</div>
+		</div>
+		</div>
+		</div>
+</body>
+<script type="text/javascript">
+	function abc()
+	{
+		
+		var a=document.getElementById('in').value;
+		var b=document.getElementById('pw').value;
+		if(a=="kl@gmail.com" &&  b=="kl2331")
+		{
+			alert("valid username & password")
+			window.location="icon.html"
+		}
+		else
+		{
+			alert("not valid username & password")
+		}
+	}
+</script>
+
+</html>
