@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<title>modal</title>
+</head>
+<body>
+	<div class="container">
+		<button class="btn bg-info" data-bs-toggle="modal" data-bs-target="#myModal" >
+			login
+		</button>
+ 	</div>
+
+
+ 	<div class="modal" id="myModal">
+ 		<div class="modal-dialog">
+ 			<div class="modal-content">
+ 				<div class="modal-header">
+ 					<h1 class="modal-title">login page</h1>
+ 					<button class="btn-close" data-bs-dismiss="modal"></button>
+ 				</div>
+ 			 	<div class="modal-body">
+ 			 		<form class="form">
+ 						<input type="text" name="" id="us" placeholder="enter your name" class="form-control">
+ 						<input type="password" name="" id="pw" placeholder="enter your password" class="form-control">
+ 					</form>
+ 				</div>
+ 				<div class="modal-footer">
+ 					<button class="btn bg-primary" onclick="pass()">login</button>
+ 					<button class="btn bg-danger">cancle</button>
+	 			</div>
+ 			</div>
+ 		</div>
+
+ 	</div>
+</body>
+
+<script type="text/javascript">
+	
+	function pass()
+	{
+		var a=document.getElementById('us').value;
+		var b=document.getElementById('pw').value;
+
+		if(a=="khyati3188.com" && b=="12345")
+		{
+			alert("you have entered right us and pw")
+			window.location="popover.html"
+		}
+		else{
+			alert("you have entered wrong us and pw")
+		}
+	}
+</script>
+
+</html>
